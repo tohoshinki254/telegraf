@@ -113,37 +113,37 @@ get in touch with the package author if support is needed:
 See usage with:
 
 ```shell
-telegraf --help
+./telegraf --help
 ```
 
 ### Generate a telegraf config file
 
 ```shell
-telegraf config > telegraf.conf
+./telegraf config > telegraf.conf
 ```
 
 ### Generate config with only cpu input & influxdb output plugins defined
 
 ```shell
-telegraf config --section-filter agent:inputs:outputs --input-filter cpu --output-filter influxdb
+./telegraf config --section-filter agent:inputs:outputs --input-filter cpu --output-filter influxdb
 ```
 
 ### Run a single telegraf collection, outputting metrics to stdout
 
 ```shell
-telegraf --config telegraf.conf --test
+./telegraf --config telegraf.conf --test
 ```
 
 ### Run telegraf with all plugins defined in config file
 
 ```shell
-telegraf --config telegraf.conf
+./telegraf --config telegraf.conf
 ```
 
 ### Run telegraf, enabling the cpu & memory input, and influxdb output plugins
 
 ```shell
-telegraf --config telegraf.conf --input-filter cpu:mem --output-filter influxdb
+./telegraf --config telegraf.conf --input-filter cpu:mem --output-filter influxdb
 ```
 
 ## Contribute to the Project
